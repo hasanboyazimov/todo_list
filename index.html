@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="bg-img flex flex-col pt-[70px] items-center w-full h-[300px]">
+      <div class="container w-[541px]">
+        <div class="flex items-center justify-between w-full mb-10">
+          <h1 class="text-white text-[40px] tracking-[15px] font-bold">TODO</h1>
+          <span class="icon"><img src="/icons/dark-icon.svg" alt="" /></span>
+        </div>
+        <form action="#" class="mb-6">
+          <div class="relative">
+            <input
+              id="input"
+              class="p-5 pl-16 w-full rounded-lg outline-none text-lg relative"
+              type="text"
+              placeholder="Create a new todo…"
+            />
+            <span
+              class="absolute top-1/2 left-3 transform -translate-y-1/2 w-6 h-6 border border-[#E3E4F1 ] rounded-full"
+            ></span>
+          </div>
+          <div id="error-box" class="text-white h-8 rounded"></div>
+        </form>
+
+        <ul id="ul" class="rounded-lg shadow-xl overflow-hidden"></ul>
+      </div>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>

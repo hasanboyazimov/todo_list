@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .icon {
+        @apply flex justify-center items-center  text-[12px] ml-[6px] text-white;
+    }
+  .liStyle {
+    @apply p-5 pl-16 w-full  relative border outline-none text-lg select-none bg-white;
+  }
+
+  .spancha {
+    @apply block absolute top-1/2 left-3 ml-4 transform -translate-y-1/2 w-6 h-6 border border-[#E3E4F1] rounded-full;
+  }
+
+  .complated {
+    @apply line-through text-gray-300
+  }
+
+  .linear {
+    background: linear-gradient(135deg, #55ddff, #c058f3);
+  }
+}
